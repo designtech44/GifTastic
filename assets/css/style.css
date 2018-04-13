@@ -1,3 +1,146 @@
-h1 {
-  color: Red;
+@charset "UTF-8";
+/* CSS Document */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+}
+
+.header {
+  display: inline-block;
+  background-color: #000000;
+  height: 100px;
+  text-align: center;
+  font-size: 60px;
+  color: #ffffff;
+}
+
+img#bird {
+  padding-top: 20px;
+  width: 340px;
+  height: 220px;
+  clear: both;
+}
+
+#box {
+  height: 425px;
+}
+
+.text-center {
+  margin: 10px 0 0 0;
+}
+
+.giphy_title {
+  background-color: #c4df9b;
+  height: 45px;
+}
+
+h4 {
+  color: #11010b;
+  padding-top: 10px;
+  margin-left: 15px;
+  font-size: 20px;
+}
+
+div.form_panel {
+  width: 375px;
+  background-color: #00aeef;
+  display: inline-block;
+  padding-bottom: 150px;
+}
+
+div.inputLabel {
+  display: block;
+  color: #662d91;
+  width: 275px;
+  padding-top: 20px;
+  margin: 10 0 0 80px;
+  z-index: 999;
+}
+
+#add-game:focus {
+  background-color: #bdd9c7;
+}
+
+#add-game {
+  cursor: pointer;
+}
+
+#buttonPanel {
+  display: block;
+  background-color: rgb(120, 162, 50);
+  height: 400px;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #bdd9c7;
+}
+
+#gifPanel {
+  background-color: #000000;
+  display: block;
+}
+
+.gaming_btns {
+  background: #FFE535;
+  padding-bottom: 50px;
+}
+
+button {
+  width: 175px;
+  padding: 5px;
+  margin: 5px 0 0 50px;
+  border-radius: 5px 5px 5px 5px;
+}
+
+.gameGif {
+  position: relative;
+  float: left;
+  margin: 20px 20px 0px 0px;
+  border-radius: 5px 5px 5px 5px;
+  left: 15px;
+  background-color: #F76E34;
+}
+
+h2 {
+  font-size: 24px;
+  margin-left: 10px;
+}
+
+img {
+  width: 200px;
+  height: 140px;
+}
+
+/* footer */
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+/* Margin bottom by footer height */
+
+body {
+  margin-bottom: 60px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  /* Set the fixed height of the footer here */
+  line-height: 50px;
+  /* Vertically center the text there */
+  background-color: #f5f5f5;
+  text-align: center;
+}
+
+p span {
+  font-size: 20px;
 }

@@ -1,14 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>GifTastic Pets</title>
+  <link href="https://fonts.googleapis.com/css?family=Rammetto+One" rel="stylesheet">
+  <!-- link to the jQuery Library -->
+  <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+  <!-- CSS -->
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-  <title>GifTastic</title>
 </head>
+
 <body>
-  <h1>This is my Giphy API Site</h1>
+  <div class="container">
+    <!-- Header-->
+    <div class="row">
+      <div class="col-md-12 header">
+        <div class="text-center"><span>Cats & Birds</span>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col col-md-12 giphy_title">
+        <h4>To see your favorite pet Click on the botton</h4>
+      </div>
+    </div>
+    <!--Buttons Panel-->
+    <div class="row">
+      <div class="col col-md-8 game_btns">
+        <div id="buttonPanel"></div>
+      </div>
+      <div class="col col-md-4 form_panel" id="box">
+        <img id="bird" src="assets/images/bird_giphy.gif" alt="bird gif">
+        <!-- Create form input to add a button name -->
+        <div class="inputLabel">
+          <form id="game-form">
+            <label for="game-input"><span class="inputLabel">Look for a specific type of cat or bird</span></label>
+            <br>
+            <input type="text" id="game-input">
+            <br>
+            <br>
+            <!-- Button triggers a new game to be added -->
+            <input id="add-game" type="submit" value="Submit">
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- Loading Game Gifs Panel -->
+    <div class="row">
+      <div class="col col-lg-12" id="gifPanel">
+      </div>
+    </div>
+  </div>
+  <footer class="footer col-sm-12 bg-dark">
+    <p><span class="text-muted">&copy; Copyright Dean Dyer</span></p>
+  </footer>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+  <!-- jQuery cdn -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- js local file -->
+  <script type="text/javascript" src="assets/javascript/logic.js"></script>
 
 </body>
+
 </html>
